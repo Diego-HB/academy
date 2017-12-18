@@ -1,1 +1,288 @@
 /* Universal Styles */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  color: white;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  max-width: 960px;
+  background-color: green;
+  color: white;
+  border: 1px solid black;
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  margin-left: 24px;
+}
+
+.logo img {
+  margin-right: 5px;
+}
+
+nav.desktop {
+  margin-right: 24px;
+}
+
+.desktop ul li {
+  display: inline-block;
+  padding-left: 16px;
+}
+
+.desktop a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Main Content */
+
+/* Learn Section */
+.learn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 32px 24px;
+  border: 1px solid blue;
+}
+
+.left {
+  border: 1px solid red;
+  max-width: 60%;
+  margin-right: 24px;
+}
+
+.left img {
+  width: 100%;
+}
+
+.right {
+  border: 1px solid black;
+  padding-right: 72px;
+}
+
+.right span {
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  color: white;
+  display: block;
+  padding: 8px 0;
+}
+
+/* Campus Section */
+.campus {
+  display: flex;
+  padding: 32px 24px;
+  border: 1px solid blue;
+}
+
+.campus-left {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-right: 24px;
+}
+
+.image {
+  width: 60%;
+}
+
+.image,
+.description {
+  width: 100%;
+  border: 1px solid;
+}
+
+.image img {
+  width: 100%;
+}
+
+.campus-right {
+  width: 40%;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+}
+
+.orientation {
+  background-color: Lightgrey;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.campus-img {
+  width: 35%;
+  height: auto;
+  border: 1px solid blue;
+  background-color: Lightgreen;
+}
+
+.campus-img img {
+  width: 100%;
+}
+
+.date {
+  background-color: orange;
+  width: 65%;
+  margin-left: 16px;
+}
+/* Courses Section */
+
+#gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid blue;
+}
+
+h1 {
+  margin: 48px 0;
+  background-color: Orange;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+.courses {
+  background-color: Lightgrey;
+  width: 816px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.course {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 32%;
+  margin-bottom: 32px;
+}
+
+.course img {
+  border: 1px solid red;
+  width: 100%;
+}
+
+.course-description {
+  background-color: yellow;
+  margin: 16px 16px 24px;
+}
+
+
+/* Thesis Section */
+#exhibition {
+  border: 1px solid blue;
+}
+
+.exhibit {
+  background-color: LightYellow;
+  display: flex;
+  width: 100%;
+}
+
+.video-column {
+  background-color: LightGrey;
+  width: 60%;
+  margin: 32px 24px;
+}
+
+h1.thesis {
+  margin-bottom: 0;
+  background-color: Orange;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+.video-description {
+  background-color: LightGreen;
+  border: 1px solid black;
+
+}
+
+.right-column {
+  background-color: Lime;
+  border: 1px solid red;
+  margin-top: 32px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.more-videos {
+  background-color: white;
+  display: flex;
+  border: 1px solid green;
+}
+
+.video-thumbnail {
+  width: 35%;
+  margin: 16px;
+
+}
+
+.video-thumbnail img {
+  border: 1px solid red;
+  width: 100%;
+}
+
+.video-text {
+  width: 65%;
+}
+
+/* Footer */
+footer {
+  margin: 0 auto;
+  background-color: Orange;
+  color: red;
+  width: 960px;
+  height: 98px;
+  border-top: 1px solid grey;
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright {
+  border: 1px solid white;
+  margin: 16px 24px;
+}
+
+nav {
+  border: 1px solid black;
+  margin: 16px 24px;
+
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  text-decoration: none;
+}
