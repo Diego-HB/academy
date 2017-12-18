@@ -5,6 +5,30 @@ body {
   padding: 0;
   background-color: white;
   font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.2;
+  color: rgba(80,80,80,0.8);
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.4;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 32px 0;
 }
 
 .container {
@@ -25,9 +49,7 @@ header .container {
   max-width: 960px;
   background-color: green;
   color: white;
-  border: 1px solid black;
 }
-
 
 .logo {
   display: flex;
@@ -40,6 +62,17 @@ header .container {
   margin-right: 5px;
 }
 
+.logo h4 {
+  font-family: "Bungee", cursive;
+  font-size: 1.5rem;
+}
+
+.logo span {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
 nav.desktop {
   margin-right: 24px;
 }
@@ -47,6 +80,9 @@ nav.desktop {
 .desktop ul li {
   display: inline-block;
   padding-left: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0;
 }
 
 .desktop a {
@@ -62,11 +98,10 @@ nav.desktop {
   justify-content: flex-start;
   align-items: center;
   padding: 32px 24px;
-  border: 1px solid blue;
+  background-color: LightGrey;
 }
 
 .left {
-  border: 1px solid red;
   max-width: 60%;
   margin-right: 24px;
 }
@@ -76,7 +111,6 @@ nav.desktop {
 }
 
 .right {
-  border: 1px solid black;
   padding-right: 72px;
 }
 
@@ -85,21 +119,23 @@ nav.desktop {
   text-align: center;
   background-color: black;
   color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 1.2;
+  font-weight: 400;
   display: block;
-  padding: 8px 0;
+  padding: 16px 0;
+  border-radius: 5px;
 }
 
 /* Campus Section */
 .campus {
   display: flex;
   padding: 32px 24px;
-  border: 1px solid blue;
 }
 
 .campus-left {
-  border: 1px solid red;
-  display: flex;
-  flex-direction: column;
+  /*display: flex;
+  flex-direction: column;*/
   width: 60%;
   margin-right: 24px;
 }
@@ -111,7 +147,22 @@ nav.desktop {
 .image,
 .description {
   width: 100%;
-  border: 1px solid;
+}
+
+.description {
+  margin-top: 32px;
+}
+
+.description h1 {
+  margin-bottom: 24px;
+}
+
+.description h6 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  letter-spacing: 0;
+  padding-top: 32px;
 }
 
 .image img {
@@ -120,13 +171,12 @@ nav.desktop {
 
 .campus-right {
   width: 40%;
-  border: 1px solid;
+  border-left: 2px solid rgba(80,80,80,0.2);
   display: flex;
   flex-direction: column;
 }
 
 .orientation {
-  background-color: Lightgrey;
   padding: 16px;
   display: flex;
   justify-content: center;
@@ -136,8 +186,7 @@ nav.desktop {
 .campus-img {
   width: 35%;
   height: auto;
-  border: 1px solid blue;
-  background-color: Lightgreen;
+  margin-right: 16px;
 }
 
 .campus-img img {
@@ -145,9 +194,32 @@ nav.desktop {
 }
 
 .date {
-  background-color: orange;
   width: 65%;
-  margin-left: 16px;
+}
+
+.date h4 {
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.date h5 {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 8px 0;
+}
+
+.date a {
+  text-decoration: none;
+  color: green;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+}
+
+.orientation:last-child {
+  background-color: LightGrey;
 }
 /* Courses Section */
 
@@ -155,15 +227,24 @@ nav.desktop {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid blue;
+  background-color: LightGrey;
 }
 
-h1 {
+#gallery h1,
+#exhibition h1 {
   margin: 48px 0;
-  background-color: Orange;
-  color: white;
+  color: black;
   width: 100%;
   text-align: center;
+}
+
+#gallery h4,
+#exhibition h4 {
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.4;
 }
 
 .courses {
@@ -183,60 +264,50 @@ h1 {
 }
 
 .course img {
-  border: 1px solid red;
   width: 100%;
 }
 
 .course-description {
-  background-color: yellow;
   margin: 16px 16px 24px;
 }
 
-
-/* Thesis Section */
-#exhibition {
-  border: 1px solid blue;
+.course-description p {
+  margin-top: 8px;
+  color: rgba(80,80,80,0.8);
 }
 
+/* Thesis Section */
 .exhibit {
-  background-color: LightYellow;
   display: flex;
   width: 100%;
 }
 
 .video-column {
-  background-color: LightGrey;
   width: 60%;
-  margin: 32px 24px;
-}
-
-h1.thesis {
-  margin-bottom: 0;
-  background-color: Orange;
-  color: white;
-  width: 100%;
-  text-align: center;
+  margin: 0 24px 32px;
 }
 
 .video-description {
-  background-color: LightGreen;
-  border: 1px solid black;
+  margin-top: 24px;
+}
 
+.video-description p {
+  margin-top: 8px;
 }
 
 .right-column {
-  background-color: Lime;
-  border: 1px solid red;
-  margin-top: 32px;
   width: 40%;
   display: flex;
   flex-direction: column;
 }
 
 .more-videos {
-  background-color: white;
   display: flex;
-  border: 1px solid green;
+  align-items: center;
+}
+
+.more-videos:first-child {
+  background-color: LightGrey;
 }
 
 .video-thumbnail {
@@ -246,7 +317,6 @@ h1.thesis {
 }
 
 .video-thumbnail img {
-  border: 1px solid red;
   width: 100%;
 }
 
@@ -257,32 +327,30 @@ h1.thesis {
 /* Footer */
 footer {
   margin: 0 auto;
-  background-color: Orange;
-  color: red;
+  color: LightGrey;
   width: 960px;
   height: 98px;
-  border-top: 1px solid grey;
+  border-top: 2px solid rgba(80,80,80,0.2);
   display: flex;
   justify-content: space-between;
 }
 
 .copyright {
-  border: 1px solid white;
   margin: 16px 24px;
 }
 
-nav {
-  border: 1px solid black;
+footer nav {
   margin: 16px 24px;
 
 }
 
-nav ul {
+footer nav ul {
   margin: 0;
   padding: 0;
 }
 
-nav li {
+footer nav li {
   display: inline;
   text-decoration: none;
+  margin-left: 12px;
 }
