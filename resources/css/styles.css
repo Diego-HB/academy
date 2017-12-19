@@ -3,7 +3,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: white;
+  background-color: #fff;
   font-size: 16px;
   letter-spacing: 0.5px;
 }
@@ -21,6 +21,7 @@ h1 {
   font-weight: 700;
   font-size: 2rem;
   line-height: 1.4;
+  color: #247065;
 }
 
 h3 {
@@ -36,9 +37,19 @@ h3 {
   margin: 0 auto;
 }
 
+/*=======================
+Colors
+=========================
+Yellow: #ffec97  rgb(255,236,151)
+Green: #60a65f  rgb(96,166,95)
+Dark Green: #247065  rgb(36,112,102)
+Darker Green: #2c5b60  rgb(44,91,96)
+Blue: #2b3d54  rgb(44,91,96)
+
 /* Header */
+
 header {
-  color: white;
+  color: #2b3d54;
 }
 
 header .container {
@@ -47,8 +58,6 @@ header .container {
   align-items: center;
   height: 64px;
   max-width: 960px;
-  background-color: green;
-  color: white;
 }
 
 .logo {
@@ -81,13 +90,13 @@ nav.desktop {
   display: inline-block;
   padding-left: 16px;
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0;
 }
 
 .desktop a {
   text-decoration: none;
-  color: white;
+  color: #60a65f;
 }
 
 /* Main Content */
@@ -98,7 +107,7 @@ nav.desktop {
   justify-content: flex-start;
   align-items: center;
   padding: 32px 24px;
-  background-color: LightGrey;
+  background-color: #ffec97;
 }
 
 .left {
@@ -117,7 +126,7 @@ nav.desktop {
 .right span {
   width: 100%;
   text-align: center;
-  background-color: black;
+  background-color: #247065;
   color: white;
   font-family: "Lato", sans-serif;
   font-size: 1.2;
@@ -177,16 +186,17 @@ nav.desktop {
 }
 
 .orientation {
-  padding: 16px;
   display: flex;
-  justify-content: center;
   align-items: center;
+}
+
+.orientation:first-child {
+  border-bottom: 2px solid rgba(80,80,80,0.2);
 }
 
 .campus-img {
   width: 35%;
-  height: auto;
-  margin-right: 16px;
+  margin: 16px;
 }
 
 .campus-img img {
@@ -198,10 +208,11 @@ nav.desktop {
 }
 
 .date h4 {
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0;
+  color: #2c5b60;
 }
 
 .date h5 {
@@ -219,7 +230,7 @@ nav.desktop {
 }
 
 .orientation:last-child {
-  background-color: LightGrey;
+  background-color: #ffec97;
 }
 /* Courses Section */
 
@@ -227,7 +238,7 @@ nav.desktop {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: LightGrey;
+  background-color: #ffec97;
 }
 
 #gallery h1,
@@ -236,19 +247,24 @@ nav.desktop {
   color: black;
   width: 100%;
   text-align: center;
+  color: #247065;
 }
 
 #gallery h4,
 #exhibition h4 {
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0;
   line-height: 1.4;
+  color: #2c5b60;
+}
+
+#gallery p.tag {
+  color: #247065;
 }
 
 .courses {
-  background-color: Lightgrey;
   width: 816px;
   display: flex;
   justify-content: space-between;
@@ -307,13 +323,12 @@ nav.desktop {
 }
 
 .more-videos:first-child {
-  background-color: LightGrey;
+  background-color: #ffec97;
 }
 
 .video-thumbnail {
   width: 35%;
   margin: 16px;
-
 }
 
 .video-thumbnail img {
@@ -323,6 +338,7 @@ nav.desktop {
 .video-text {
   width: 65%;
 }
+
 
 /* Footer */
 footer {
