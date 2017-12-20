@@ -477,7 +477,7 @@ footer nav li {
 /* Campus Section */
 
 .campus {
-  diplay: flex;
+  display: flex;
   flex-direction: column;
   margin: 0;
   padding: 0;
