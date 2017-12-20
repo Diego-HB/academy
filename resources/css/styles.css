@@ -88,6 +88,10 @@ nav.desktop {
   margin-right: 24px;
 }
 
+nav.mobile {
+  display: none;
+}
+
 .desktop ul li {
   display: inline-block;
   padding-left: 16px;
@@ -245,6 +249,11 @@ nav.desktop {
 .orientation:last-child {
   background-color: #ffec97;
 }
+
+.campus-img-mobile {
+  display: none;
+}
+
 /* Courses Section */
 
 #gallery {
@@ -303,6 +312,10 @@ nav.desktop {
 .course-description p {
   margin-top: 8px;
   color: rgba(80,80,80,0.8);
+}
+
+.courses-mobile {
+  display: none;
 }
 
 /* Thesis Section */
@@ -390,21 +403,13 @@ footer nav li {
 /* Media queries Desktop */
 @media only screen and (max-width: 960px) {
 
-  nav.mobile {
-    display: none;
-  }
-
 /* Campus Section */
 
-  .campus-img-mobile {
-    display: none;
-  }
+
 
 /* Gallery Section */
 
-  .courses-mobile {
-    display: none;
-  }
+
 }
 
 
